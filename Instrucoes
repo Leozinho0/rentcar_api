@@ -1,0 +1,9 @@
+Criado por Leandro Viana
+19/05/2020
+
+Instruções
+
+1. Configurar as variáveis de ambiente no arquivo .env;
+2. Rodar o comando composer install para baixar/atualizar as dependências do composer;
+3. Gerar as tabelas da base: rodar o comando php artisan migrate dentro da pasta raíz do projeto;
+4. Servir aplicação: rodar o comando php artisan serve dentro da pasta raíz do projeto.
