@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
+/*
 Route::apiResource('client', 'ClientController');
 Route::apiResource('product', 'ProductController');
-Route::apiResource('car', 'CarController');
+Route::apiResource('car', 'CarController');*/
