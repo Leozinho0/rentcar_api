@@ -17,7 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-/*
-Route::apiResource('client', 'ClientController');
-Route::apiResource('product', 'ProductController');
-Route::apiResource('car', 'CarController');*/
+
+Route::resources([
+	'profissional' => 'API\ProfissionalController'
+]);
+
+Route::get('/get_cidades/{estado_id}', 'API\RequestController@get_cidades');
