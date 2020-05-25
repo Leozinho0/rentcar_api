@@ -23,3 +23,5 @@ Route::resources([
 ]);
 
 Route::get('/get_cidades/{estado_id}', 'API\RequestController@get_cidades');
+Route::get('/get_chart/', 'API\ProfissionalController@get_chartdata');
+Route::get('/file_download/{id}', 'API\ProfissionalController@file_download');

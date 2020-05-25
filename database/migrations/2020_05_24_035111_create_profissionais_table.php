@@ -22,6 +22,7 @@ class CreateProfissionaisTable extends Migration
             $table->foreignId('estado_id')->constrained('estados');
             $table->foreignId('cidade_id')->constrained('cidades');
             $table->foreignId('profissao_id')->constrained('profissoes');
+            $table->string('upload')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
